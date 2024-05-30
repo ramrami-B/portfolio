@@ -9,7 +9,6 @@ const PageLayout = ({ children }: Props) => {
     <React.Fragment>
       <header>header</header>
       {children}
-      <footer>footer</footer>
     </React.Fragment>
   );
 };

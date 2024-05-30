@@ -1,11 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 import PageLayout from "./layout/PageLayout";
-import HomePage from "./pages/HomePage";
+import MainPage from "./pages/MainPage";
+import AboutMePage from "./pages/AboutMePage";
 
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<PageLayout children={<HomePage />} />} />
+      <Route path="/" element={<MainPage />} />
+      <Route path="/aboutme" element={<PageLayout children={<AboutMePage />} />} />
     </Routes>
   );
 };
